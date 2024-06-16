@@ -17,6 +17,7 @@
     ```
    * 동일한 요청 발생시 캐시된 데이터 사용
    * 데이터 길이에 제한이 있음
+![get](https://github.com/tta01/practice/assets/138537758/220be4ba-49b3-4f02-b899-7b734d5f312d)
 <br /><br />
 
 - **POST** : 요청 데이터 처리시 사용 <br />

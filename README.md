@@ -100,6 +100,7 @@ naver.com/join.signUp?name=태경&age=20
   - HTTP 요청의 **본문(body)에 포함된 데이터를 사용**하기 때문에 **여러 형태로 전달**되어 진다.
     * JSON, XML, text/plain 등 다양한 형식으로 사용 가능하다.
     
+    
   ```java
     * 기존 데이터
     url: /users    
@@ -247,3 +248,73 @@ naver.com/join.signUp?name=태경&age=20
 **POST** | X | X | X
 **PUT** | X | <span style="color:red">O<span/> | X  
 **DELETE** | X | <span style="color:red">O<span/> | X 
+
+
+
+<!-- 
+ ** CORS (Cross-Origin Resource Sharing) : 브라우저에서 실행되는 클라이언트 측에서 발생하는 보안 정책으로, 스크립트에서 한 출처(origin)의 리소스가 다른 출처의 리소스와 상호 작용하는 것을 제한함
+ ** 지정된 url의 주소 값이 동일 할 경우 = " /user/{id} " or " /user/** "
+ ** URL(Uniform Resource Locator)은 Resource의 정확한 위치 정보(파일의 위치)를 나타냄으로 URL을 통해 Resource가 어디에 있는지 어떻게 접근할 수 있는지 알 수 있다. 
+
+ - **POST와 PUT의 차이점**
+  - POST는 새로운 데이터를 생성해 낼 수 있지만, PUT은 사용자가 데이터를 지정하여 해당 리소스를 수정하는 것
+  - POST는 요청시마다 데이터를 생성함 / PUT은 같은 요청을 반복해도 같은 결과 값을 얻음 <br />
+    * 그렇다고 해서 PUT이 캐싱이 되는건 아님! 요청된 자원을? 상태를? 실시간으로 업데이트 해야 하기 때문에!!
+
+ 리소스의 위치를 옮기면 해당 URL을 더 이상 사용할 수 없게 됨
+```
+원래의 주소값에서  => notion.so/tg0100/10
+이 주소로 변경할 경우 => notion.so/tg0100/1234
+원래의 주소 값인 'notion.so/tg0100/10' 로 접속했을 때 찾을 수 없는 페이지로 뜨게 됨
+```
+
+** **URI와 URL 구분하는 방법** <br/>
+URI 는 통합 자원 식별자로 주소에 식별자가 있으면 URI <br />
+URL은 리소스 주소를 나타내므로 리소스 위치까지만 나타내면 URL
+
+``` 
+https://hstory0208.tistory.com/category
+
+hstory0208.tistory.com 에서 category 라는 경로를 나타냅니다.
+category는 리소스의 실제 위치이므로 이 주소는 URL 입니다.
+ 
+
+https://hstory0208.tistory.com/category/12
+
+hstory0208.tistory.com 에서 category 라는 자원의 경로를 나타내는 부분까진 URL 이지만
+/12 는 식별자 이므로 https://hstory0208.tistory.com/category URL을 포함한 URI라고 할 수 있습니다.
+ 
+
+https://hstory0208.tistory.com/category?page=12
+
+위와 마찬가지로 https://hstory0208.tistory.com/category 까지는 자원의 실제 위치를 나타내기 때문에 URL이고, 뒤의 query ( ?page=12 ) 가 붙었으므로 https://hstory0208.tistory.com/category URL을 포함한 URI 입니다.
+```
+
+<br />
+
+```java
+@Controller
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+    public ModelAndView getUser(@PathVariable Long id) {
+        User user = userService.getUserById(id);
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("user", user);
+        modelAndView.setViewName("userDetailPage"); // 이동할 JSP 페이지 설정
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
+    public String deleteUser(@PathVariable Long id) {
+        userService.deleteUser(id);
+        return "redirect:/user/list"; // 삭제 후 이동할 URL 설정
+    }
+
+    // 다른 컨트롤러 메소드들도 동일한 방식으로 JSP 페이지 설정
+}
+
+``` -->

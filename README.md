@@ -99,29 +99,28 @@ naver.com/join.signUp?name=태경&age=20
 
   - HTTP 요청의 **본문(body)에 포함된 데이터를 사용**하기 때문에 **여러 형태로 전달**되어 진다.
     * JSON, XML, text/plain 등 다양한 형식으로 사용 가능하다.
-    
-    
-  ```java
-    * 기존 데이터
-    url: /users    
-    {
-        "name":"TaeGyoung"
-        "address":"daejeon"
-    }
 
-    * 수정할 데이터
-    url: /users/info 
-    {
-        "name":"IU"
-        "address":"Seoul"
-    }  
+    ```java
+      * 기존 데이터
+      url: /users    
+      {
+          "name":"TaeGyoung"
+          "address":"daejeon"
+      }
 
-    * 요청받은 body값으로 덮어씌워져서(생성되어) 수정된 데이터 값                  
-    {
-        "name":"IU"
-        "address":"Seoul"
-    }
-  ```
+      * 수정할 데이터
+      url: /users/info 
+      {
+          "name":"IU"
+          "address":"Seoul"
+      }  
+
+      * 요청받은 body값으로 덮어씌워져서(생성되어) 수정된 데이터 값                  
+      {
+          "name":"IU"
+          "address":"Seoul"
+      }
+    ```
  
   <br />
 
@@ -252,6 +251,7 @@ naver.com/join.signUp?name=태경&age=20
 
 
 <!-- 
+
  ** CORS (Cross-Origin Resource Sharing) : 브라우저에서 실행되는 클라이언트 측에서 발생하는 보안 정책으로, 스크립트에서 한 출처(origin)의 리소스가 다른 출처의 리소스와 상호 작용하는 것을 제한함
  ** 지정된 url의 주소 값이 동일 할 경우 = " /user/{id} " or " /user/** "
  ** URL(Uniform Resource Locator)은 Resource의 정확한 위치 정보(파일의 위치)를 나타냄으로 URL을 통해 Resource가 어디에 있는지 어떻게 접근할 수 있는지 알 수 있다. 

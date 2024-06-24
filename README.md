@@ -43,15 +43,15 @@ naver.com/join.signUp?name=태경&age=20
 
 <br /> <br />
 
-<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fb95cadbe-757e-4c9d-b287-7fef984addda%2Fimage.png" width="45%" height="45%"/>
+<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fb95cadbe-757e-4c9d-b287-7fef984addda%2Fimage.png" width="55%" height="45%"/>
 
 <br /><br />
 
-<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2F1ae3d175-c2fc-43f6-875f-8db56de7fde5%2Fimage.png" width="45%" height="45%"/>
+<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2F1ae3d175-c2fc-43f6-875f-8db56de7fde5%2Fimage.png" width="55%" height="45%"/>
 
 <br /><br />
 
-<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fe78d9d52-1d49-47ac-9ad5-587ad9dd67ce%2Fimage.png" width="45%" height="45%"/>
+<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fe78d9d52-1d49-47ac-9ad5-587ad9dd67ce%2Fimage.png" width="55%" height="45%"/>
 
 <br /> <hr /> <br />
 
@@ -76,15 +76,15 @@ naver.com/join.signUp?name=태경&age=20
 
 <br /> <br />
 
-<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2F7e9d26c9-c3ac-4f22-8d0a-82de9de92c20%2Fimage.png" width="45%" height="45%"/>
+<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2F7e9d26c9-c3ac-4f22-8d0a-82de9de92c20%2Fimage.png" width="55%" height="45%"/>
 
 <br />
 
-<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fddb5d0c9-e6c5-41a0-b315-5d0d6310879b%2Fimage.png" width="45%" height="45%"/>
+<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fddb5d0c9-e6c5-41a0-b315-5d0d6310879b%2Fimage.png" width="55%" height="45%"/>
 
 <br />
 
-<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fe335a4e7-17bc-4830-a662-13a23d1f9738%2Fimage.png" width="45%" height="45%"/>
+<img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fe335a4e7-17bc-4830-a662-13a23d1f9738%2Fimage.png" width="55%" height="45%"/>
 
 <br /> <hr /> <br />
 
@@ -219,6 +219,7 @@ naver.com/join.signUp?name=태경&age=20
 - **외부요인의 영향**
   * 중간에 외부요인이 끼어들어 리소스를 변경하게 되면, 요청의 결과가 달라질 수 있기 때문에 멱등성이 깨지는 상황이다. 즉, 외부요인에 의해 리소스가 변경되었기 때문에 멱등하지 않아진다.
   * 멱등성을 보장하기 위해서는 외부 요인에 의한 영향을 최소화해아 한다.
+
 <br />
 
 ### 4. 안정성 및 캐싱
@@ -251,7 +252,6 @@ naver.com/join.signUp?name=태경&age=20
 
 
 <!-- 
-
  ** CORS (Cross-Origin Resource Sharing) : 브라우저에서 실행되는 클라이언트 측에서 발생하는 보안 정책으로, 스크립트에서 한 출처(origin)의 리소스가 다른 출처의 리소스와 상호 작용하는 것을 제한함
  ** 지정된 url의 주소 값이 동일 할 경우 = " /user/{id} " or " /user/** "
  ** URL(Uniform Resource Locator)은 Resource의 정확한 위치 정보(파일의 위치)를 나타냄으로 URL을 통해 Resource가 어디에 있는지 어떻게 접근할 수 있는지 알 수 있다. 

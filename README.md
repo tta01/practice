@@ -1,11 +1,11 @@
 ## HTTP(Hyper Text Transfer Protocol) Method
-```markdown
+
 클라이언트와 서버 사이의 데이터를 주고 받는 방식으로, 사용자가 서버에 요청(request)을 하면 서버는 이에 맞는 응답(response)을 보내준다.
 HTTP 메서드는 GET방식은 조회, POST방식은 데이터 생성이나 수정 등 이런 식으로 요청의 목적을 명확하게 표현하는 것에 중점을 두고 있다.
 
 * Google 'Accelerator' 사건 : 'Accelerator'는 해당 페이지에 있는 URL의 내용을 미리 가져오는 것으로 웹페이지의 전환을 빠르게 해주기 위해 개발되었는데,
                               사이트 개발자들이 GET/POST의 개념적 인식없이 사용한 탓에 엉뚱한 데이터가 삭제되는 등의 문제가 발생한 사건
-```
+
 
 ### 주요 메서드 및 관련 메서드
 ```markdown

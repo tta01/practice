@@ -6,13 +6,17 @@ HTTP 메서드는 GET방식은 조회, POST방식은 데이터 생성이나 수�
 * Google 'Accelerator' 사건 : 'Accelerator'는 해당 페이지에 있는 URL의 내용을 미리 가져오는 것으로 웹페이지의 전환을 빠르게 해주기 위해 개발되었는데,
                               사이트 개발자들이 GET/POST의 개념적 인식없이 사용한 탓에 엉뚱한 데이터가 삭제되는 등의 문제가 발생한 사건
 
+<br />
 
 ### 주요 메서드 및 관련 메서드
-```markdown
-GET, POST, PUT, PATCH, DELETE / HEAD, OPTIONS, CONNECT, TRACE
-```
+1.  GET, POST, PUT, PATCH, DELETE
+2.  HEAD, OPTIONS, CONNECT, TRACE
+
+<br />
 
 ---
+
+<br />
 
 ### 1. 주요 메서드
 
@@ -53,7 +57,7 @@ naver.com/join.signUp?name=태경&age=20
 
 <img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fe78d9d52-1d49-47ac-9ad5-587ad9dd67ce%2Fimage.png" width="55%" height="45%"/>
 
-<br /> <hr /> <br />
+<hr /> <br />
 
 
 - **POST**
@@ -87,7 +91,6 @@ naver.com/join.signUp?name=태경&age=20
 <img src="https://velog.velcdn.com/images%2Fwoply%2Fpost%2Fe335a4e7-17bc-4830-a662-13a23d1f9738%2Fimage.png" width="55%" height="45%"/>
 
 <br /> <hr /> <br />
-
 
 - **PUT** 
   - **새로운 리소스를 생성**하거나, 기존의 리소스를 수정할 때 사용한다.

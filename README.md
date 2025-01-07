@@ -1,3 +1,5 @@
+# 해당 프로젝트는 보류.. 
+
 ## HTTP(Hyper Text Transfer Protocol) Method
 
 클라이언트와 서버 사이의 데이터를 주고 받는 방식으로, 사용자가 서버에 요청(request)을 하면 서버는 이에 맞는 응답(response)을 보내준다.
